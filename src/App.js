@@ -11,20 +11,15 @@ const CreatePostPage = lazy(() => import('./pages/createPostPage/CreatePostPage'
 function App() {
   return (
       <BrowserRouter>
-
-
         <Routes>
 
           <Route path="/" element={<Layout/>} >
-
           <Route index element={<PostsPage />}/>
-            <Route path="posts/:id" element={<PostsDetailPage/>} />
-          <Route path="createPostPage" element={<CreatePostPage />} />
-
+            <Route path="posts/:id" element={<PostsDetailPage/>}/>
+            <Route path="createPostPage" element={<CreatePostPage/>}/>
           </Route>
 
         </Routes>
-
       </BrowserRouter>
   );
 }

@@ -7,11 +7,7 @@ export function PostsDetailPage() {
 
     const {id} = useParams();
 
-
-    const [post, setPosts] = useState(null);
     const [items, setItems] = useState([]);
-
-
 
     const url ='http://localhost:8000/posts'
 
@@ -24,15 +20,11 @@ export function PostsDetailPage() {
         catch (error){
             console.log(error);
         }
-
-
-
     }
 
     useEffect(() => {
         getPosts()
     }, []);
-
 
     console.log(id)
 

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 
 function PostsPage() {
+
     const url ='http://localhost:8000/posts'
 
     const [posts, setPosts] = useState([])
@@ -26,7 +27,6 @@ function PostsPage() {
                     <Link to={`/posts/${post.id}`}>
                         <button>detail info</button>
                     </Link>
-
                 </div>
             ))}
         </div>

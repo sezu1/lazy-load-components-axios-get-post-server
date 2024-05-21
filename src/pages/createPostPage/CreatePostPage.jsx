@@ -1,11 +1,11 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
-import axios, {post} from "axios";
+import axios from "axios";
 
 function CreatePostPage() {
     const {register,
-        handleSubmit,
-        reset} = useForm()
+        handleSubmit
+          } = useForm()
 
     function submit(values){
         sendPosts(values)
@@ -26,6 +26,7 @@ function CreatePostPage() {
 
     return (
         <div>
+
             <h2>Create post page</h2>
             <form onSubmit={handleSubmit(submit)}>
                 <input type="text" placeholder="title" {...register('title')}/>

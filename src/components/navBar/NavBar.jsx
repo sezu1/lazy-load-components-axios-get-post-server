@@ -11,9 +11,6 @@ export function NavBar() {
             <li>
                 <NavLink to="createPostPage">Create Post</NavLink>
             </li>
-
-
-
         </ul>
     );
 }
